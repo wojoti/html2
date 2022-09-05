@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OLMO - Bla Bla Bla</title>
+  <title>SaaS Classic – Just another website bla bla bla</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -11,8 +11,104 @@
 
 <body>
   <script>
+    function openNav() {
+      document.getElementById("navbar-mobile").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("navbar-mobile").style.width = "0%";
+    }
+
   </script>
 
 </body>
+<div id="navbar-mobile" class="navbar-mobile-overlay">
+  <div class="navbar-mobile-list-div">
+    <a href="javascript:void(0)" class="navbar-mobile--close-btn" onclick="closeNav()">&times;</a>
+    <div class="navbar-mobile-logo">
+      <img src="img/logo.png" alt="Website logo" />
+    </div>
+    <ul class="navbar-mobile-items--ul">
+      <li class="navbar-mobile-items--li">
+        <a href="#" class="navbar-mobile-items--li-a">Home</a>
+      </li>
+      <li class="navbar-mobile-items--li">
+        <a href="#" class="navbar-mobile-items--li-a">About</a>
+      </li>
+      <li class="navbar-mobile-items--li">
+        <a href="#" class="navbar-mobile-items--li-a">Pages </a>
+      </li>
+      <li class="navbar-mobile-items--li">
+        <a href="#" class="navbar-mobile-items--li-a">Auth Pages </a>
+      </li>
+      <li class="navbar-mobile-items--li">
+        <a href="#" class="navbar-mobile-items--li-a">Features</a>
+      </li>
+      <li class="navbar-mobile-items--li">
+        <a href="#" class="navbar-mobile-items--li-a">FAQs</a>
+      </li>
+      <li class="navbar-mobile-items--li">
+        <a href="#" class="navbar-mobile-items--li-a">Try For Free</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="navbar">
+  <div class="navbar-sizer">
+    <img src="img/logo.png" alt="Website logo" class="navbar-logo" />
+    <div class="navbar-items show-full-elements">
+      <ul class="navbar-items--ul">
+        <li class="navbar-items--li"><a href="#">Home<i class="fa fa-caret-down"></i></a></li>
+        <li class="navbar-items--li"><a href="#">About</a></li>
+        <li class="navbar-items--li"><a href="#">Pages <i class="fa fa-caret-down"></i></a></li>
+        <li class="navbar-items--li"><a href="#">Auth Pages <i class="fa fa-caret-down"></i></a></li>
+        <li class="navbar-items--li"><a href="#">Features</a></li>
+        <li class="navbar-items--li"><a href="#">FAQs</a></li>
+        <li><button type="button" class="navbar-items--btn">Try For Free</button></li>
+      </ul>
+    </div>
+    <div class="navbar-items hide-full-elements"><i class="fa fa-bars fa-2x" onclick="openNav()"></i></div>
+  </div>
+</div>
+
+<div class="ball-left">
+  <img src="img/b-shape1.png" alt="Decoration shape on the left" />
+</div>
+<div class="ball-right">
+  <img src="img/b-shape2.png" alt="Decoration shape on the right top" class="b-shape2" />
+  <img src="img/b-shape3-1.png" alt="Decoration shape on the right" class="b-shape3" />
+</div>
+
+
+<div class="part-container top-div-margin ">
+  <div class="part-container">
+    <div class="content">
+      <div>
+
+      </div>
+    </div>
+  </div>
+  <div class="part-container">
+    <div class="content"></div>
+  </div>
+  <div class="part-container">
+    <div class="content"></div>
+  </div>
+  <div class="part-container">
+    <div class="content"></div>
+  </div>
+  <div class="part-container">
+    <div class="content"></div>
+  </div>
+  <div class="part-container">
+    <div class="content"></div>
+  </div>
+  <div class="part-container">
+    <div class="content"></div>
+  </div>
+  <div class="part-container">
+    <div class="content"></div>
+  </div>
 
 </html>
