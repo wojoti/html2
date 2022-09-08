@@ -509,6 +509,13 @@ button {
   border: none;
 }
 
+.faq-box {
+  background-color: #ECEEF2;
+  background-image: url(img/mixpoint.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .question-a,
 .question-b,
 .question-c,
@@ -634,10 +641,18 @@ button {
   font-weight: bolder;
 }
 
+.picture-sizer-clouds-s {
+  width: 60px;
+  position: absolute;
+  left: 120px;
+  top: 70px;
+  animation: cloudFly 17s ease 0s infinite normal;
+}
+
 .picture-sizer-clouds {
   position: absolute;
   left: 0px;
-  top: 60px;
+  top: 80px;
   animation: cloudFly 16s ease 0s infinite normal;
 }
 
