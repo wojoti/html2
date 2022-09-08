@@ -25,6 +25,22 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  font-size: 30px;
+  line-height: 50px;
+  margin: 15px 0 0 0;
+}
+
+h4 {
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0;
+}
 
 button {
   border-radius: 45px;
@@ -46,6 +62,11 @@ button {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.no-margin {
+  margin: 0;
+  padding: 0;
 }
 
 .mw {
@@ -104,7 +125,6 @@ button {
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-
 }
 
 .navbar-items--li a {
@@ -187,7 +207,7 @@ button {
 }
 
 .content {
-  width: 95%;
+  width: 92%;
   max-width: 1250px;
 }
 
@@ -203,7 +223,6 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .ball-left {
@@ -227,15 +246,43 @@ button {
 .b-shape2 {
   position: absolute;
   top: 75px;
-  right: 50px;
+  right: 30px;
   width: 200px;
   z-index: 1;
+  animation: leftRight 8s ease 0s infinite normal;
+}
+
+@keyframes leftRight {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-30px);
+  }
+
 }
 
 .b-shape3 {
   position: absolute;
   top: 0;
   right: 0;
+  animation: upDown 4s ease 0s infinite normal;
+
+}
+
+@keyframes upDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
 }
 
 .top-div-left {
@@ -306,11 +353,285 @@ button {
   margin-top: 18px;
 }
 
+.features-title--h {
+  text-align: left !important;
+}
+
+.services-tiles {
+  flex-direction: column;
+}
+
+.services-tile {
+  align-items: flex-start;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px 30px;
+  border-radius: 8px;
+  border-color: grey;
+  box-shadow: 0 3px 50px rgb(0 0 0 / 0.2);
+  margin: 30px auto;
+}
+
+.services-tile--h {
+  margin: 20px 0 5px 0;
+}
+
+.generic-p {
+  text-align: left;
+  color: grey;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.service-bottom-link {
+  margin: 30px 0 60px 0;
+}
+
+.generic-link {
+  font-weight: bold;
+}
+
+.benefit-box {
+  background-color: #EBEDF2;
+  background-image: url(img/ashapemix.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.picture-benefit-box {
+  flex-direction: column;
+}
+
+.picture-benefit-box-description {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.picture-benefit-box-description--icon {
+  border-radius: 90px;
+  background-color: #6c2b95;
+  color: white;
+  padding: 12px;
+  border-style: hidden;
+  margin-top: 15px;
+}
+
+.picture-sizer {
+  width: 80%;
+  max-width: 409px;
+  margin: 50px 0;
+}
+
+.features-box {
+  background-color: white;
+}
+
+.features-title {
+  justify-content: flex-start;
+}
+
+.features-elements {
+  flex-direction: column;
+  width: 90%;
+}
+
+.features-trail-button {
+  margin: 30px auto 50px auto;
+}
+
+.features-container {
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.features-container--circle1 {
+  padding: 5px;
+
+  border: 1px solid white;
+  border-radius: 90px;
+}
+
+.features-container--circle2 {
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 45px;
+}
+
+.software-dev-circle--background {
+  background-color: #d9f3de;
+}
+
+.software-dev-circle--color {
+  color: #049507;
+}
+
+.ui-ux-circle--background {
+  background-color: #e1e1f5;
+}
+
+.ui-ux-circle--color {
+  color: #6c2b95;
+}
+
+.support-circle--background {
+  background-color: #ebdcf4;
+}
+
+.support-circle--color {
+  color: #d912dc;
+}
+
+.tools-box {
+  background-color: #f0f2f7;
+  padding-bottom: 50px;
+}
+
+.image-sizer-software {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+.faq-item--row {
+  flex-direction: row;
+}
+
+.faq-expander {
+  font-size: 14px;
+  color: white;
+  background-color: #6c2b95;
+  width: 18px;
+  height: 18px;
+  margin: 3px;
+  padding: 0;
+  border: none;
+}
+
+.question-a,
+.question-b,
+.question-c,
+.question-d,
+.question-e,
+.question-f,
+.question-g,
+.question-h {
+  font-size: 0px;
+}
+
+.pricing-content {
+  width: 85%;
+}
+
+.pricing-box {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.pricing-box-elements {
+  width: 90%;
+  flex-direction: column;
+}
+
+.pricing-box-element {
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 23px 43px 0 rgb(0 0 0 / 13%);
+  max-width: 326px;
+}
 
 
+.pricing-box-element-top {
+  background: rgb(93, 93, 93);
+  background: linear-gradient(90deg, rgba(93, 93, 93, 1) 0%, rgba(149, 149, 149, 1) 100%);
+}
 
+.pricing-box-element-top--icon {
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 30px 20px 40px 50px;
+}
 
+.pricing-box-element-top--price {
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px 0 0 0;
+}
 
+.pricing-box-element-top--p-title {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0 0 15px 0;
+}
+
+.pricing-box-element-top--p-cost {
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.pricing-box-element-line {
+  align-items: center;
+}
+
+.pricing-box-element-line--top {
+  padding-top: 25px;
+}
+
+.pricing-box-element-bottom {
+  background-color: white;
+  border: 1px white;
+  border-radius: 0 0 14px 14px;
+}
+
+.pricing-box-element-line-green {
+  color: white;
+  background: rgb(0, 255, 0);
+  background: linear-gradient(0deg, rgba(0, 255, 0, 1) 0%, rgba(0, 201, 0, 1) 100%);
+  box-shadow: 0 3px 15px rgb(0 210 0 / 0.5);
+  border-radius: 45px;
+  padding: 5px;
+  margin: 0 10px 0 40px;
+}
+
+.pricing-box-element-line--p {
+  font-weight: bold;
+  font-size: 14px;
+  color: gray;
+  margin: 15px 0;
+}
+
+.pricing-box-element-button {
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+.bottom-box {
+  background-color: #1b0234;
+}
+
+.subscribe-box {
+  background-color: #6c2b95;
+  color: #ffffff;
+  border: 1px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.subscribe-box-content {
+  flex-direction: column;
+  text-align: center;
+}
+
+.subscribe--p {
+  font-size: 45px;
+  font-weight: bolder;
+}
 
 .show-full-elements,
 .show-semi-res-elements {
@@ -321,7 +642,9 @@ button {
   display: block;
 }
 
-
+hr {
+  margin: 0;
+}
 
 /* mobilny navbar */
 

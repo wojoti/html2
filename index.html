@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SaaS Classic – Just another website bla bla bla</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 
@@ -18,7 +18,6 @@
     function closeNav() {
       document.getElementById("navbar-mobile").style.width = "0%";
     }
-
   </script>
 
   <div id="navbar-mobile" class="navbar-mobile-overlay">
@@ -58,16 +57,28 @@
       <img src="./img/logo.png" alt="Website logo" class="navbar-logo" />
       <div class="navbar-items show-full-elements">
         <ul class="navbar-items--ul">
-          <li class="navbar-items--li"><a href="#">Home<i class="fa fa-caret-down"></i></a></li>
+          <li class="navbar-items--li">
+            <a href="#">Home<i class="fa fa-caret-down"></i></a>
+          </li>
           <li class="navbar-items--li"><a href="#">About</a></li>
-          <li class="navbar-items--li"><a href="#">Pages <i class="fa fa-caret-down"></i></a></li>
-          <li class="navbar-items--li"><a href="#">Auth Pages <i class="fa fa-caret-down"></i></a></li>
+          <li class="navbar-items--li">
+            <a href="#">Pages <i class="fa fa-caret-down"></i></a>
+          </li>
+          <li class="navbar-items--li">
+            <a href="#">Auth Pages <i class="fa fa-caret-down"></i></a>
+          </li>
           <li class="navbar-items--li"><a href="#">Features</a></li>
           <li class="navbar-items--li"><a href="#">FAQs</a></li>
-          <li class="navbar-items--li"><button type="button" class="navbar-items--btn">Try For Free</button></li>
+          <li class="navbar-items--li">
+            <button type="button" class="navbar-items--btn">
+              Try For Free
+            </button>
+          </li>
         </ul>
       </div>
-      <div class="navbar-items hide-full-elements"><i class="fa fa-bars fa-2x" onclick="openNav()"></i></div>
+      <div class="navbar-items hide-full-elements">
+        <i class="fa fa-bars fa-2x" onclick="openNav()"></i>
+      </div>
     </div>
   </div>
 
@@ -79,22 +90,30 @@
     <img src="img/b-shape3-1.png" alt="Decoration shape on the right" class="b-shape3" />
   </div>
 
-  <div class="part-container top-div-margin ">
+  <div class="part-container top-div-margin">
     <div class="content">
       <div class="top-div-left flex-center">
         <div class="top-border-title top-border-title--margin-top">
           <p class="top-border-title--p">Creative SAAS website</p>
         </div>
         <div class="top-div-title">
-          <h1 class="h-main">Best website for <span class="text-thinner">SAAS</span> business</h1>
+          <h1 class="h-main">
+            Best website for <span class="text-thinner">SAAS</span> business
+          </h1>
         </div>
         <div class="flex-center top-div-short-desc">
-          <p class="top-div-short-desc--p">Even in the most uncertain times, Help Scout keeps you connected with
-            customers.</p>
+          <p class="top-div-short-desc--p">
+            Even in the most uncertain times, Help Scout keeps you connected
+            with customers.
+          </p>
         </div>
         <div class="top-div-buttons flex-center">
-          <div class="top-div-buttons--btn-div"><button type="button">Try it free</button></div>
-          <div class="top-div-buttons--btn-div"><button type="button">Get a demo</button></div>
+          <div class="top-div-buttons--btn-div">
+            <button type="button">Try it free</button>
+          </div>
+          <div class="top-div-buttons--btn-div">
+            <button type="button">Get a demo</button>
+          </div>
         </div>
         <p class="top-div-cc-info">No credit card required*</p>
       </div>
@@ -111,29 +130,524 @@
         </div>
       </div>
       <div class="services-title flex-center">
-        <h2 class="services-title--h">We can give the <span class="text-thinner">best facilities</span> for you!</h2>
+        <h2 class="services-title--h">
+          We can give the
+          <span class="text-thinner">best facilities</span> for you!
+        </h2>
+      </div>
+      <div class="flex-center services-tiles">
+        <div class="services-tile flex-center">
+          <p class="no-margin"><i class="fa fa-calendar fa-3x"></i></p>
+          <h4 class="services-tile--h">Faster docs. Faster deals</h4>
+          <p class="generic-p">
+            Get your documents out the door fast to keep deals with automatic
+            notifications, on-the-fly editing, and integrated.
+          </p>
+        </div>
+
+        <div class="services-tile flex-center">
+          <p class="no-margin"><i class="fa fa-pencil fa-3x"></i></p>
+          <h4 class="services-tile--h">UI/UX design based app</h4>
+          <p class="generic-p">
+            Whether you have a team of 2 or 200, the Mailboxes keep everyone
+            the same page. Leverage automation to move fast.
+          </p>
+        </div>
+
+        <div class="services-tile flex-center">
+          <p class="no-margin"><i class="fa fa-user fa-3x"></i></p>
+          <h4 class="services-tile--h">Build designs that scale</h4>
+          <p class="generic-p">
+            Lay the foundations for your products design system with reusable,
+            responsive components that automatically scale.
+          </p>
+        </div>
+
+        <div class="services-tile flex-center">
+          <p class="no-margin"><i class="fa fa-database fa-3x"></i></p>
+          <h4 class="services-tile--h">Customise your workflow</h4>
+          <p class="generic-p">
+            Lay the foundations for your products design system with reusable,
+            responsive components that automatically scale.
+          </p>
+        </div>
+
+        <div class="services-tile flex-center">
+          <p class="no-margin"><i class="fa fa-life-ring fa-3x"></i></p>
+          <h4 class="services-tile--h">Customer Support</h4>
+          <p class="generic-p">
+            Lay the foundations for your products design system with reusable,
+            responsive components that automatically scale.
+          </p>
+        </div>
+
+        <div class="services-tile flex-center">
+          <p class="no-margin"><i class="fa fa-key fa-3x"></i></p>
+          <h4 class="services-tile--h">Super security</h4>
+          <p class="generic-p">
+            Lay the foundations for your products design system with reusable,
+            responsive components that automatically scale.
+          </p>
+        </div>
+
+        <div class="service-bottom-link flex-center">
+          <a href="#" class="generic-link">Want to download this app?</a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="part-container">
-    <div class="content"></div>
+  <div class="part-container benefit-box">
+    <div class="content">
+      <div class="picture-benefit-box flex-center">
+        <img src="img/handsup.png" alt="Phone with hands up" class="picture-sizer" />
+        <div class="picture-benefit-box-description flex-center mw">
+          <div class="picture-benefit-box-description--icon">
+            <i class="fa fa-cog fa-3x"></i>
+          </div>
+          <h3>Workflow that works for your benefit.</h3>
+          <p class="generic-p">
+            Give your team the ability to quickly create, send, and track docs
+            within an approval system that works for everyone. And will be
+            very easy to work with appilo that workflow will work only for
+            your benefit.
+          </p>
+          <a href="#" class="generic-link">Read all customer stories</a>
+        </div>
+        <div class="picture-benefit-box-description flex-center mw">
+          <div class="picture-benefit-box-description--icon">
+            <i class="fa fa-laptop fa-3x"></i>
+          </div>
+          <h3>Don't just engage, make it engaging.</h3>
+          <p class="generic-p">
+            Create stunning, effective sales documents with custom base
+            designed themes, templates, and embedded rich media. It’s easy to
+            create and send professional-looking docs that canbe win every
+            time.
+          </p>
+          <a href="#" class="generic-link">More about the software</a>
+        </div>
+        <img src="img/statistics.png" alt="Phone with statistics" class="picture-sizer" />
+      </div>
+    </div>
   </div>
-  <div class="part-container">
-    <div class="content"></div>
+  <div class="part-container features-box">
+    <div class="content">
+      <div class="flex features-title">
+        <div class="top-border-title">
+          <p class="top-border-title--p">Our awesome features</p>
+        </div>
+      </div>
+      <div class="services-title flex">
+        <h2 class="services-title--h features-title--h">
+          Our features will help to
+          <span class="text-thinner">improve business</span>
+        </h2>
+      </div>
+      <p class="generic-p">
+        Get your documents out the door fast to keep deals with automatic
+        notifications, on-the-fly editing, and integrated.
+      </p>
+      <div class="features-trail-button">
+        <button type="button">Start a free trial</button>
+      </div>
+      <div class="features-elements flex-center">
+        <div class="features-container flex-center">
+          <div class="features-container--circle1 software-dev-circle--background">
+            <div class="features-container--circle2 software-dev-circle--background software-dev-circle--color">
+              <i class="fa fa-window-close-o fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+          <h4 class="services-tile--h">Software development</h4>
+          <p class="generic-p text-center">
+            Create stunning, effective sales documents with custom-designed
+            theme &amp; template.
+          </p>
+        </div>
+
+        <div class="features-container flex-center">
+          <div class="features-container--circle1 ui-ux-circle--background">
+            <div class="features-container--circle2 ui-ux-circle--background ui-ux-circle--color">
+              <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+          <h4 class="services-tile--h">UI/UX design</h4>
+          <p class="generic-p text-center">
+            Create stunning, effective sales documents with custom-designed
+            theme &amp; template.
+          </p>
+        </div>
+
+        <div class="features-container flex-center">
+          <div class="features-container--circle1 support-circle--background">
+            <div class="features-container--circle2 support-circle--background support-circle--color">
+              <i class="fa fa-headphones fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+          <h4 class="services-tile--h">Dedicated support</h4>
+          <p class="generic-p text-center">
+            Create stunning, effective sales documents with custom-designed
+            theme &amp; template.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="part-container">
-    <div class="content"></div>
+  <div class="part-container tools-box">
+    <div class="content">
+      <img src="img/in.png" alt="Software logos" class="image-sizer-software" />
+      <div class="flex features-title">
+        <div class="top-border-title">
+          <p class="top-border-title--p">Our awesome features</p>
+        </div>
+      </div>
+      <div class="services-title flex">
+        <h2 class="services-title--h features-title--h">
+          Appilo use
+          <span class="text-thinner">the tool </span>you love
+        </h2>
+      </div>
+      <p class="generic-p">
+        Say goodbye to manual data entry. Integrate with thetools you depend
+        on so your team can get proposals,contracts and quotes out the door
+        fast.
+      </p>
+      <a href="#" class="generic-link">All integrations</a>
+    </div>
   </div>
-  <div class="part-container">
-    <div class="content"></div>
+  <div class="part-container team-members-box">
+    <div class="content">
+      <div class="flex-center">
+        <div class="top-border-title">
+          <p class="top-border-title--p">Our awesome members</p>
+        </div>
+      </div>
+      <div class="services-title flex-center">
+        <h2 class="services-title--h">Our team members develop softwares</h2>
+      </div>
+    </div>
   </div>
-  <div class="part-container">
-    <div class="content"></div>
+  <div class="part-container faq-box">
+    <div class="content">
+      <div class="flex-center">
+        <div class="top-border-title">
+          <p class="top-border-title--p">Frequently asked questions</p>
+        </div>
+      </div>
+      <div class="services-title flex-center">
+        <h2 class="services-title--h">We have some FAQ to inform you more</h2>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item--row flex">
+          <h5>01. SaaS versus on-premixe: How do I choose?</h5>
+          <button type="button" class="faq-expander">+</button>
+        </div>
+        <div class="question-a">
+          <p class="generic-p question-a">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Robion has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-item--row flex">
+          <h5>02. SaaS versus on-premixe: How do I choose?</h5>
+          <button type="button" class="faq-expander">+</button>
+        </div>
+        <div class="question-b">
+          <p class="generic-p question-b">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Robion has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-item--row flex">
+          <h5>03. SaaS versus on-premixe: How do I choose?</h5>
+          <button type="button" class="faq-expander">+</button>
+        </div>
+        <div class="question-c">
+          <p class="generic-p question-c">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Robion has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item--row flex">
+          <h5>04. SaaS versus on-premixe: How do I choose?</h5>
+          <button type="button" class="faq-expander">+</button>
+        </div>
+        <div class="question-d">
+          <p class="generic-p question-d">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Robion has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item--row flex">
+          <h5>05. SaaS versus on-premixe: How do I choose?</h5>
+          <button type="button" class="faq-expander">+</button>
+        </div>
+        <div class="question-e">
+          <p class="generic-p question-e">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Robion has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item--row flex">
+          <h5>06. SaaS versus on-premixe: How do I choose?</h5>
+          <button type="button" class="faq-expander">+</button>
+        </div>
+        <div class="question-f">
+          <p class="generic-p question-f">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Robion has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item--row flex">
+          <h5>07. SaaS versus on-premixe: How do I choose?</h5>
+          <button type="button" class="faq-expander">+</button>
+        </div>
+        <div class="question-g">
+          <p class="generic-p question-g">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Robion has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item--row flex">
+          <h5>08. SaaS versus on-premixe: How do I choose?</h5>
+          <button type="button" class="faq-expander">+</button>
+        </div>
+        <div class="question-h">
+          <p class="generic-p question-h">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Robion has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="part-container">
-    <div class="content"></div>
+  <div class="part-container pricing-box">
+    <div class="content pricing-content">
+      <div class="flex-center">
+        <div class="top-border-title">
+          <p class="top-border-title--p">Pricing</p>
+        </div>
+      </div>
+      <div class="services-title flex-center">
+        <h2 class="services-title--h">Our best pricing to give you offer</h2>
+      </div>
+
+      <div class="pricing-box-elements flex-center">
+
+
+        <div class="pricing-box-element">
+          <div class="pricing-box-element-top flex">
+            <div class="pricing-box-element-top--icon">
+              <i class="fa fa-paper-plane-o fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="pricing-box-element-top--price flex">
+              <p class="pricing-box-element-top--p-title">Basic</p>
+              <p class="pricing-box-element-top--p-cost">$00</p>
+            </div>
+          </div>
+          <div class="pricing-box-element-bottom">
+            <div class="pricing-box-element-line flex pricing-box-element-line--top">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Up to 5 Web Pages</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Meta Description Optimization</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Baseline Ranking Report</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Initial Backlink Analysis</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">10 Keyword Optimization</p>
+            </div>
+
+            <div class="flex-center pricing-box-element-button">
+              <button type="button">Try it now</button>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="pricing-box-element">
+          <div class="pricing-box-element-top flex">
+            <div class="pricing-box-element-top--icon">
+              <i class="fa fa-rocket fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="pricing-box-element-top--price flex">
+              <p class="pricing-box-element-top--p-title">Standard</p>
+              <p class="pricing-box-element-top--p-cost">$49</p>
+            </div>
+          </div>
+          <div class="pricing-box-element-bottom">
+            <div class="pricing-box-element-line flex pricing-box-element-line--top">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Up to 5 Web Pages</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Meta Description Optimization</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Baseline Ranking Report</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Initial Backlink Analysis</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">10 Keyword Optimization</p>
+            </div>
+
+            <div class="flex-center pricing-box-element-button">
+              <button type="button">Try it now</button>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-box-element">
+          <div class="pricing-box-element-top flex">
+            <div class="pricing-box-element-top--icon">
+              <i class="fa fa-plane fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="pricing-box-element-top--price flex">
+              <p class="pricing-box-element-top--p-title">Premium</p>
+              <p class="pricing-box-element-top--p-cost">$99</p>
+            </div>
+          </div>
+          <div class="pricing-box-element-bottom">
+            <div class="pricing-box-element-line flex pricing-box-element-line--top">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Up to 5 Web Pages</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Meta Description Optimization</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Baseline Ranking Report</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">Initial Backlink Analysis</p>
+            </div>
+            <hr>
+            <div class="pricing-box-element-line flex">
+              <div class="pricing-box-element-line-green">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+              <p class="pricing-box-element-line--p">10 Keyword Optimization</p>
+            </div>
+
+            <div class="flex-center pricing-box-element-button">
+              <button type="button">Try it now</button>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
   </div>
 
+  <div class="part-container bottom-box">
+    <div class="subscribe-box">
+      <div class="content">
+        <div class="flex-center subscribe-box-content">
+          <p class="subscribe--p">Subscribe now!</p>
+          <p>Get the lastest update.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="content">
+    </div>
+  </div>
 </body>
 
 </html>
