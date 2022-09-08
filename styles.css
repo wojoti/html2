@@ -616,6 +616,7 @@ button {
 }
 
 .subscribe-box {
+  position: relative;
   background-color: #6c2b95;
   color: #ffffff;
   border: 1px;
@@ -631,6 +632,26 @@ button {
 .subscribe--p {
   font-size: 45px;
   font-weight: bolder;
+}
+
+.picture-sizer-clouds {
+  position: absolute;
+  left: 0px;
+  top: 60px;
+  animation: cloudFly 16s ease 0s infinite normal;
+}
+
+@keyframes cloudFly {
+
+  0%,
+  100% {
+    transform: translateX(-200px);
+  }
+
+  50% {
+    transform: translateX(+500px);
+  }
+
 }
 
 .show-full-elements,
