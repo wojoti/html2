@@ -8,6 +8,7 @@ body {
   margin: 0;
   background-color: #fafafa;
   font-family: Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -52,6 +53,12 @@ button {
   margin: 0px 5px;
 }
 
+.button-icon {
+  background: linear-gradient(-45deg, #6b2c94 32%, #fc01fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .flex {
   display: flex;
 }
@@ -93,6 +100,7 @@ button {
   padding: 0 20px;
   background-color: white;
   z-index: 99;
+  box-shadow: 0 0 20px -10px rgb(0 0 0 / 80%);
 }
 
 .navbar-sizer {
@@ -109,6 +117,10 @@ button {
   display: flex;
   justify-content: center;
   height: 37px;
+}
+
+.navbar-items {
+  color: #73299a;
 }
 
 .navbar-items--ul {
@@ -372,6 +384,10 @@ button {
   margin: 30px auto;
 }
 
+.services-icon {
+  height: 55px;
+}
+
 .services-tile--h {
   margin: 20px 0 5px 0;
 }
@@ -402,6 +418,12 @@ button {
 
 .picture-benefit-box {
   flex-direction: column;
+}
+
+.benefit-icon-sizer {
+  width: 40px;
+  height: 40px;
+  filter: invert(100%);
 }
 
 .picture-benefit-box-description {
@@ -606,6 +628,11 @@ button {
   margin: 0 10px 0 40px;
 }
 
+.option-icon-sizer {
+  width: 48px;
+  height: 48px;
+}
+
 .pricing-box-element-line--p {
   font-weight: bold;
   font-size: 14px;
@@ -620,6 +647,7 @@ button {
 
 .bottom-box {
   background-color: #1b0234;
+  overflow-x: hidden;
 }
 
 .subscribe-box {
@@ -643,16 +671,16 @@ button {
 
 .picture-sizer-clouds-s {
   width: 60px;
-  position: absolute;
+  position: relative;
   left: 120px;
-  top: 70px;
+  bottom: 130px;
   animation: cloudFly 17s ease 0s infinite normal;
 }
 
 .picture-sizer-clouds {
-  position: absolute;
+  position: relative;
   left: 0px;
-  top: 80px;
+  bottom: 70px;
   animation: cloudFly 16s ease 0s infinite normal;
 }
 
