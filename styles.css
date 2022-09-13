@@ -45,16 +45,45 @@ h5 {
 
 button {
   border-radius: 45px;
-  padding: 7px 20px;
+  padding: 7px 20px 7px 30px;
   font-weight: bolder;
   font-size: 17px;
   border-color: #951fb3;
-  background: none;
+  /* linear-gradient(-45deg, rgb(107, 44, 148) 32%, rgb(252, 1, 253) 100%) */
+  background: linear-gradient(
+    #6c2b95 50%,
+    #6c2b95,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0) 50%
+  );
+  transition: background 0.3s;
+  background-size: 100% 200%;
+  background-position: bottom;
   margin: 0px 5px;
+  position: relative;
+}
+
+.default-button:hover {
+  background-position: 100% 100%;
+  background-position: top;
+  color: white;
 }
 
 .button-icon {
   background: linear-gradient(-45deg, #6b2c94 32%, #fc01fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 7px 0 7px 10px;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+}
+
+.button-icon:hover {
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -261,7 +290,6 @@ button {
 }
 
 @keyframes leftRight {
-
   0%,
   100% {
     transform: translateX(0);
@@ -280,7 +308,6 @@ button {
 }
 
 @keyframes upDown {
-
   0%,
   100% {
     transform: translateY(0);
@@ -638,9 +665,11 @@ button {
 
 .pricing-box-element-top {
   background: rgb(93, 93, 93);
-  background: linear-gradient(90deg,
-      rgba(93, 93, 93, 1) 0%,
-      rgba(149, 149, 149, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(93, 93, 93, 1) 0%,
+    rgba(149, 149, 149, 1) 100%
+  );
 }
 
 .pricing-box-element-top--icon {
@@ -688,9 +717,11 @@ button {
 .pricing-box-element-line-green {
   color: white;
   background: rgb(0, 255, 0);
-  background: linear-gradient(0deg,
-      rgba(0, 255, 0, 1) 0%,
-      rgba(0, 201, 0, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 255, 0, 1) 0%,
+    rgba(0, 201, 0, 1) 100%
+  );
   box-shadow: 0 3px 15px rgb(0 210 0 / 0.5);
   border-radius: 45px;
   padding: 5px;
@@ -717,6 +748,9 @@ button {
 .bottom-box {
   background-color: #1b0234;
   overflow-x: hidden;
+  background-image: url(img/fobg.png);
+  background-position: center right;
+  background-repeat: no-repeat;
 }
 
 .subscribe-box {
@@ -848,9 +882,65 @@ button {
   list-style: none;
 }
 
+.footer-links--li {
+  font-size: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  margin-right: 70px;
+}
 
+.arrow {
+  position: absolute;
+  margin: 3px auto 3px auto;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  clip-path: polygon(0 85%, 15% 100%, 75% 50%, 15% 0, 0 15%, 40% 50%);
+}
+
+.newsletter-note {
+  color: white;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.newsletter-input {
+  height: 45px;
+  background-color: #503d63;
+  border: none;
+  width: 100%;
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.newsletter-submit-btn {
+  color: #fff;
+  width: 62px;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  height: 45px;
+  background-color: #6c2b95;
+  margin: 0;
+}
+
+.newsletter-social {
+  margin: 40px 0 100px 0;
+}
+
+.newsletter-social--icon {
+  border-radius: 80px;
+  padding: 8px;
+  background-color: white;
+  color: #16599b;
+}
+.newsletter-social--i {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
 @keyframes cloudFly {
-
   0%,
   100% {
     transform: translateX(-200px);
@@ -876,7 +966,8 @@ hr {
 
 /* mobilny navbar */
 
-@media (min-width: 425px) {}
+@media (min-width: 425px) {
+}
 
 @media (min-width: 768px) {
   .show-semi-res-elements {
@@ -894,4 +985,5 @@ hr {
   }
 }
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+}
