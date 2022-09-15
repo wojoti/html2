@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: #fafafa;
@@ -127,14 +131,23 @@ button {
   z-index: 99;
   box-shadow: 0 0 20px -10px rgb(0 0 0 / 80%);
 }
-
+.navbar-pages-menu {
+  visibility: hidden;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  width: 600px;
+  height: 400px;
+  background-color: white;
+}
 .navbar-sizer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  max-width: 1130px;
+  max-width: 1200px;
   /* background-color: orange;  */
 }
 
@@ -160,17 +173,38 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px 15px;
 }
 
 .navbar-items--li a {
+  color: black;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-weight: bold;
+  border-bottom: 0px solid #d10edd;
+}
+
+.navbar-items--li a:hover {
+  border-bottom: 3px solid #d10edd;
+  color: #d10edd;
+  animation: border_anim 1s linear forwards;
+}
+
+@keyframes border_anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.navbar-items--btn {
+  background-color: #6b2c94;
+  color: white;
 }
 
 /* mobilny navbar */
@@ -284,7 +318,7 @@ button {
   position: absolute;
   top: 75px;
   right: 30px;
-  width: 200px;
+  width: 50vw;
   z-index: 1;
   animation: leftRight 8s ease 0s infinite normal;
 }
@@ -368,6 +402,7 @@ button {
 
 .top-div-right--img {
   width: 95vw;
+  max-width: 630px;
 }
 
 .services-div {
@@ -390,8 +425,12 @@ button {
   text-align: left !important;
 }
 
-.services-tiles {
+.features-texts {
   flex-direction: column;
+}
+
+.services-tiles {
+  flex-wrap: wrap;
 }
 
 .services-tile {
@@ -403,6 +442,7 @@ button {
   border-color: grey;
   box-shadow: 0 3px 50px rgb(0 0 0 / 0.2);
   margin: 30px auto;
+  max-width: 380px;
 }
 
 .services-icon {
@@ -640,6 +680,11 @@ button {
 .question-g,
 .question-h {
   font-size: 0px;
+  transition: font-size 0.3s;
+}
+
+.open {
+  font-size: 16px;
 }
 
 .pricing-content {
@@ -970,18 +1015,130 @@ hr {
 }
 
 @media (min-width: 768px) {
+  .top-div-margin {
+    margin-top: 130px;
+  }
+
+  button {
+    padding: 12px 35px 12px 45px;
+  }
+  .button-icon {
+    padding: 13px 0 0px 10px;
+  }
   .show-semi-res-elements {
     display: block;
   }
+
+  .content {
+    width: 97%;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .services-title--h {
+    font-size: 50px;
+  }
+
+  .services-tile {
+    margin: 30px 5px;
+  }
+
+  .features-elements {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+  .features-container {
+    margin-left: 0;
+    flex-direction: row;
+  }
+
+  .feature-text {
+    text-align: left;
+  }
+  .features-texts {
+    align-items: flex-start;
+    max-width: 400px;
+  }
+
+  .faq-questions {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .faq-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-item {
+    max-width: 45vw;
+  }
 }
 
-@media (min-width: 1030px) {
+@media (min-width: 996px) {
   .show-full-elements {
     display: block;
   }
 
   .hide-full-elements {
     display: none;
+  }
+
+  .navbar {
+    height: 80px;
+  }
+
+  .force-row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    text-align: left;
+  }
+  .top-div-controller {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .top-div-left {
+    align-items: flex-start;
+  }
+
+  .top-div-short-desc,
+  .top-div-buttons {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .top-div-short-desc--p {
+    text-align: left;
+  }
+
+  .top-div-right {
+    position: relative;
+    width: 1100px;
+    overflow-x: hidden;
+    height: 550px;
+  }
+  .top-div-right--img {
+    position: absolute;
+    top: 120px;
+    left: 0;
+  }
+
+  .services-title {
+    width: 60%;
+  }
+}
+@media (min-width: 1230px) {
+  .navbar-items--li {
+    padding: 20px 30px;
   }
 }
 

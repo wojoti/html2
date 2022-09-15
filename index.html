@@ -37,6 +37,143 @@
       function closeNav() {
         document.getElementById("navbar-mobile").style.width = "0%";
       }
+
+      var toggleFAQ1 = false;
+      var toggleFAQ2 = false;
+      var toggleFAQ3 = false;
+      var toggleFAQ4 = false;
+      var toggleFAQ5 = false;
+      var toggleFAQ6 = false;
+      var toggleFAQ7 = false;
+      var toggleFAQ8 = false;
+
+      function toggleFAQa() {
+        let theToggle = document.getElementById("answer-a");
+        switch (toggleFAQ1) {
+          case true:
+            toggleFAQ1 = false;
+            document.getElementById("answer-a").classList.toggle("open"); // wywolanie klasy open ktora daje max-height > niz mozliwa wysokosc listy i pozycjonowanie
+            document.getElementById("switch-a").innerHTML = "+";
+            break;
+          case false:
+            toggleFAQ1 = true;
+            document.getElementById("answer-a").classList.toggle("open");
+            document.getElementById("switch-a").innerHTML = "-";
+            break;
+        }
+      }
+
+      function toggleFAQb() {
+        let theToggle = document.getElementById("answer-b");
+        switch (toggleFAQ2) {
+          case true:
+            toggleFAQ2 = false;
+            document.getElementById("answer-b").classList.toggle("open"); // wywolanie klasy open ktora daje max-height > niz mozliwa wysokosc listy i pozycjonowanie
+            document.getElementById("switch-b").innerHTML = "+";
+            break;
+          case false:
+            toggleFAQ2 = true;
+            document.getElementById("answer-b").classList.toggle("open");
+            document.getElementById("switch-b").innerHTML = "-";
+            break;
+        }
+      }
+
+      function toggleFAQc() {
+        let theToggle = document.getElementById("answer-c");
+        switch (toggleFAQ3) {
+          case true:
+            toggleFAQ3 = false;
+            document.getElementById("answer-c").classList.toggle("open"); // wywolanie klasy open ktora daje max-height > niz mozliwa wysokosc listy i pozycjonowanie
+            document.getElementById("switch-c").innerHTML = "+";
+            break;
+          case false:
+            toggleFAQ3 = true;
+            document.getElementById("answer-c").classList.toggle("open");
+            document.getElementById("switch-c").innerHTML = "-";
+            break;
+        }
+      }
+
+      function toggleFAQd() {
+        let theToggle = document.getElementById("answer-d");
+        switch (toggleFAQ4) {
+          case true:
+            toggleFAQ4 = false;
+            document.getElementById("answer-d").classList.toggle("open"); // wywolanie klasy open ktora daje max-height > niz mozliwa wysokosc listy i pozycjonowanie
+            document.getElementById("switch-d").innerHTML = "+";
+            break;
+          case false:
+            toggleFAQ4 = true;
+            document.getElementById("answer-d").classList.toggle("open");
+            document.getElementById("switch-d").innerHTML = "-";
+            break;
+        }
+      }
+
+      function toggleFAQe() {
+        let theToggle = document.getElementById("answer-e");
+        switch (toggleFAQ5) {
+          case true:
+            toggleFAQ5 = false;
+            document.getElementById("switch-e").innerHTML = "+";
+            document.getElementById("answer-e").classList.toggle("open"); // wywolanie klasy open ktora daje max-height > niz mozliwa wysokosc listy i pozycjonowanie
+            break;
+          case false:
+            toggleFAQ5 = true;
+            document.getElementById("answer-e").classList.toggle("open");
+            document.getElementById("switch-e").innerHTML = "-";
+            break;
+        }
+      }
+
+      function toggleFAQf() {
+        let theToggle = document.getElementById("answer-f");
+        switch (toggleFAQ6) {
+          case true:
+            toggleFAQ6 = false;
+            document.getElementById("switch-f").innerHTML = "+";
+            document.getElementById("answer-f").classList.toggle("open"); // wywolanie klasy open ktora daje max-height > niz mozliwa wysokosc listy i pozycjonowanie
+            break;
+          case false:
+            toggleFAQ6 = true;
+            document.getElementById("answer-f").classList.toggle("open");
+            document.getElementById("switch-f").innerHTML = "-";
+            break;
+        }
+      }
+
+      function toggleFAQg() {
+        let theToggle = document.getElementById("answer-g");
+        switch (toggleFAQ7) {
+          case true:
+            toggleFAQ7 = false;
+            document.getElementById("switch-g").innerHTML = "+";
+            document.getElementById("answer-g").classList.toggle("open"); // wywolanie klasy open ktora daje max-height > niz mozliwa wysokosc listy i pozycjonowanie
+            break;
+          case false:
+            toggleFAQ7 = true;
+            document.getElementById("answer-g").classList.toggle("open");
+            document.getElementById("switch-g").innerHTML = "-";
+            break;
+        }
+      }
+
+      function toggleFAQh() {
+        let theToggle = document.getElementById("answer-h");
+        switch (toggleFAQ8) {
+          case true:
+            toggleFAQ8 = false;
+            document.getElementById("switch-h").innerHTML = "+";
+            document.getElementById("answer-h").classList.toggle("open"); // wywolanie klasy open ktora daje max-height > niz mozliwa wysokosc listy i pozycjonowanie
+            break;
+          case false:
+            toggleFAQ8 = true;
+            document.getElementById("answer-h").classList.toggle("open");
+            document.getElementById("switch-h").innerHTML = "-";
+            break;
+        }
+      }
     </script>
 
     <div id="navbar-mobile" class="navbar-mobile-overlay">
@@ -82,20 +219,21 @@
         <div class="navbar-items show-full-elements">
           <ul class="navbar-items--ul">
             <li class="navbar-items--li">
-              <a href="#">Home<i class="fa fa-caret-down"></i></a>
+              <a href="#">Demos</a>
             </li>
-            <li class="navbar-items--li"><a href="#">About</a></li>
+            <li class="navbar-items--li"><a href="#services_id">Service</a></li>
             <li class="navbar-items--li">
-              <a href="#">Pages <i class="fa fa-caret-down"></i></a>
+              <a href="#about_id">About</a>
             </li>
             <li class="navbar-items--li">
-              <a href="#">Auth Pages <i class="fa fa-caret-down"></i></a>
+              <a href="#features_id">Features</a>
             </li>
-            <li class="navbar-items--li"><a href="#">Features</a></li>
-            <li class="navbar-items--li"><a href="#">FAQs</a></li>
+            <li class="navbar-items--li"><a href="#team_id">Team</a></li>
+            <li class="navbar-items--li"><a href="#pricing_id">Pricing</a></li>
+            <li class="navbar-items--li"><a href="#">Pages</a></li>
             <li class="navbar-items--li">
               <button type="button" class="navbar-items--btn">
-                Try For Free
+                Free sign up
               </button>
             </li>
           </ul>
@@ -103,6 +241,7 @@
         <div class="navbar-items hide-full-elements">
           <i class="fa fa-bars fa-2x" onclick="openNav()"></i>
         </div>
+        <div class="navbar-pages-menu"></div>
       </div>
     </div>
 
@@ -124,53 +263,55 @@
 
     <div class="part-container top-div-margin">
       <div class="content">
-        <div class="top-div-left flex-center">
-          <div class="top-border-title top-border-title--margin-top">
-            <p class="top-border-title--p">Creative SAAS website</p>
-          </div>
-          <div class="top-div-title">
-            <h1 class="h-main">
-              Best website for <span class="text-thinner">SAAS</span> business
-            </h1>
-          </div>
-          <div class="flex-center top-div-short-desc">
-            <p class="top-div-short-desc--p">
-              Even in the most uncertain times, Help Scout keeps you connected
-              with customers.
-            </p>
-          </div>
-          <div class="top-div-buttons flex-center">
-            <div class="top-div-buttons--btn-div">
-              <button type="button" class="default-button">
-                <i
-                  aria-hidden="true"
-                  class="fas fa-cloud-download-alt button-icon"
-                ></i>
-                Try it free
-              </button>
+        <div class="top-div-controller">
+          <div class="top-div-left flex-center">
+            <div class="top-border-title top-border-title--margin-top">
+              <p class="top-border-title--p">Creative SAAS website</p>
             </div>
-            <div class="top-div-buttons--btn-div">
-              <button type="button" class="default-button">
-                <i
-                  aria-hidden="true"
-                  class="fas fa-clipboard-list button-icon"
-                ></i>
-                Get a demo
-              </button>
+            <div class="top-div-title">
+              <h1 class="h-main">
+                Best website for <span class="text-thinner">SAAS</span> business
+              </h1>
             </div>
+            <div class="flex-center top-div-short-desc">
+              <p class="top-div-short-desc--p">
+                Even in the most uncertain times, Help Scout keeps you connected
+                with customers.
+              </p>
+            </div>
+            <div class="top-div-buttons flex-center">
+              <div class="top-div-buttons--btn-div">
+                <button type="button" class="default-button">
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-cloud-download-alt button-icon"
+                  ></i>
+                  Try it free
+                </button>
+              </div>
+              <div class="top-div-buttons--btn-div">
+                <button type="button" class="default-button">
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-clipboard-list button-icon"
+                  ></i>
+                  Get a demo
+                </button>
+              </div>
+            </div>
+            <p class="top-div-cc-info">No credit card required*</p>
           </div>
-          <p class="top-div-cc-info">No credit card required*</p>
-        </div>
-        <div class="top-div-right">
-          <img
-            src="img/b-laptop-1.png"
-            alt="Laptop"
-            class="top-div-right--img"
-          />
+          <div class="top-div-right">
+            <img
+              src="img/b-laptop-1.png"
+              alt="Laptop"
+              class="top-div-right--img"
+            />
+          </div>
         </div>
       </div>
     </div>
-    <div class="part-container services-div">
+    <div class="part-container services-div" id="services_id">
       <div class="content">
         <div class="flex-center">
           <div class="top-border-title">
@@ -184,79 +325,106 @@
           </h2>
         </div>
         <div class="flex-center services-tiles">
-          <div class="services-tile flex-center">
-            <p class="no-margin">
-              <img src="img/services-1.png" alt="Icon" class="services-icon" />
-            </p>
-            <h4 class="services-tile--h">Faster docs. Faster deals</h4>
-            <p class="generic-p">
-              Get your documents out the door fast to keep deals with automatic
-              notifications, on-the-fly editing, and integrated.
-            </p>
-          </div>
+          <div class="force-row">
+            <div class="services-tile flex-center">
+              <p class="no-margin">
+                <img
+                  src="img/services-1.png"
+                  alt="Icon"
+                  class="services-icon"
+                />
+              </p>
+              <h4 class="services-tile--h">Faster docs. Faster deals</h4>
+              <p class="generic-p">
+                Get your documents out the door fast to keep deals with
+                automatic notifications, on-the-fly editing, and integrated.
+              </p>
+            </div>
 
-          <div class="services-tile flex-center">
-            <p class="no-margin">
-              <img src="img/services-2.png" alt="Icon" class="services-icon" />
-            </p>
-            <h4 class="services-tile--h">UI/UX design based app</h4>
-            <p class="generic-p">
-              Whether you have a team of 2 or 200, the Mailboxes keep everyone
-              the same page. Leverage automation to move fast.
-            </p>
-          </div>
+            <div class="services-tile flex-center">
+              <p class="no-margin">
+                <img
+                  src="img/services-2.png"
+                  alt="Icon"
+                  class="services-icon"
+                />
+              </p>
+              <h4 class="services-tile--h">UI/UX design based app</h4>
+              <p class="generic-p">
+                Whether you have a team of 2 or 200, the Mailboxes keep everyone
+                the same page. Leverage automation to move fast.
+              </p>
+            </div>
 
-          <div class="services-tile flex-center">
-            <p class="no-margin">
-              <img src="img/services-3.png" alt="Icon" class="services-icon" />
-            </p>
-            <h4 class="services-tile--h">Build designs that scale</h4>
-            <p class="generic-p">
-              Lay the foundations for your products design system with reusable,
-              responsive components that automatically scale.
-            </p>
+            <div class="services-tile flex-center">
+              <p class="no-margin">
+                <img
+                  src="img/services-3.png"
+                  alt="Icon"
+                  class="services-icon"
+                />
+              </p>
+              <h4 class="services-tile--h">Build designs that scale</h4>
+              <p class="generic-p">
+                Lay the foundations for your products design system with
+                reusable, responsive components that automatically scale.
+              </p>
+            </div>
           </div>
+          <div class="force-row">
+            <div class="services-tile flex-center">
+              <p class="no-margin">
+                <img
+                  src="img/services-4.png"
+                  alt="Icon"
+                  class="services-icon"
+                />
+              </p>
+              <h4 class="services-tile--h">Customise your workflow</h4>
+              <p class="generic-p">
+                Lay the foundations for your products design system with
+                reusable, responsive components that automatically scale.
+              </p>
+            </div>
 
-          <div class="services-tile flex-center">
-            <p class="no-margin">
-              <img src="img/services-4.png" alt="Icon" class="services-icon" />
-            </p>
-            <h4 class="services-tile--h">Customise your workflow</h4>
-            <p class="generic-p">
-              Lay the foundations for your products design system with reusable,
-              responsive components that automatically scale.
-            </p>
-          </div>
+            <div class="services-tile flex-center">
+              <p class="no-margin">
+                <img
+                  src="img/services-5.png"
+                  alt="Icon"
+                  class="services-icon"
+                />
+              </p>
+              <h4 class="services-tile--h">Customer Support</h4>
+              <p class="generic-p">
+                Lay the foundations for your products design system with
+                reusable, responsive components that automatically scale.
+              </p>
+            </div>
 
-          <div class="services-tile flex-center">
-            <p class="no-margin">
-              <img src="img/services-5.png" alt="Icon" class="services-icon" />
-            </p>
-            <h4 class="services-tile--h">Customer Support</h4>
-            <p class="generic-p">
-              Lay the foundations for your products design system with reusable,
-              responsive components that automatically scale.
-            </p>
+            <div class="services-tile flex-center">
+              <p class="no-margin">
+                <img
+                  src="img/services-6.png"
+                  alt="Icon"
+                  class="services-icon"
+                />
+              </p>
+              <h4 class="services-tile--h">Super security</h4>
+              <p class="generic-p">
+                Lay the foundations for your products design system with
+                reusable, responsive components that automatically scale.
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div class="services-tile flex-center">
-            <p class="no-margin">
-              <img src="img/services-6.png" alt="Icon" class="services-icon" />
-            </p>
-            <h4 class="services-tile--h">Super security</h4>
-            <p class="generic-p">
-              Lay the foundations for your products design system with reusable,
-              responsive components that automatically scale.
-            </p>
-          </div>
-
-          <div class="service-bottom-link flex-center">
-            <a href="#" class="generic-link">Want to download this app?</a>
-          </div>
+        <div class="service-bottom-link flex-center">
+          <a href="#" class="generic-link">Want to download this app?</a>
         </div>
       </div>
     </div>
-    <div class="part-container benefit-box">
+    <div class="part-container benefit-box" id="about_id">
       <div class="content">
         <div class="picture-benefit-box flex-center">
           <img
@@ -370,8 +538,8 @@
         </div>
       </div>
     </div>
-    <div class="part-container features-box">
-      <div class="content">
+    <div class="part-container features-box" id="features_id">
+      <div class="content features-box-container">
         <div class="flex features-title">
           <div class="top-border-title">
             <p class="top-border-title--p">Our awesome features</p>
@@ -405,11 +573,13 @@
                 <i aria-hidden="true" class="fab fa-codepen fa-2x"></i>
               </div>
             </div>
-            <h4 class="services-tile--h">Software development</h4>
-            <p class="generic-p text-center">
-              Create stunning, effective sales documents with custom-designed
-              theme &amp; template.
-            </p>
+            <div class="features-texts flex-center">
+              <h4 class="services-tile--h">Software development</h4>
+              <p class="generic-p">
+                Create stunning, effective sales documents with custom-designed
+                theme &amp; template.
+              </p>
+            </div>
           </div>
 
           <div class="features-container flex-center">
@@ -420,11 +590,13 @@
                 <i aria-hidden="true" class="fas fa-pen-square fa-2x"></i>
               </div>
             </div>
-            <h4 class="services-tile--h">UI/UX design</h4>
-            <p class="generic-p text-center">
-              Create stunning, effective sales documents with custom-designed
-              theme &amp; template.
-            </p>
+            <div class="features-texts flex-center">
+              <h4 class="services-tile--h">UI/UX design</h4>
+              <p class="generic-p">
+                Create stunning, effective sales documents with custom-designed
+                theme &amp; template.
+              </p>
+            </div>
           </div>
 
           <div class="features-container flex-center">
@@ -435,11 +607,13 @@
                 <i class="fa fa-headphones fa-2x" aria-hidden="true"></i>
               </div>
             </div>
-            <h4 class="services-tile--h">Dedicated support</h4>
-            <p class="generic-p text-center">
-              Create stunning, effective sales documents with custom-designed
-              theme &amp; template.
-            </p>
+            <div class="features-texts flex-center">
+              <h4 class="services-tile--h">Dedicated support</h4>
+              <p class="generic-p">
+                Create stunning, effective sales documents with custom-designed
+                theme &amp; template.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -470,7 +644,7 @@
         <a href="#" class="generic-link">All integrations</a>
       </div>
     </div>
-    <div class="part-container team-members-box">
+    <div class="part-container team-members-box" id="team_id">
       <div class="content">
         <div class="flex-center">
           <div class="top-border-title">
@@ -548,123 +722,194 @@
         <div class="services-title flex-center">
           <h2 class="services-title--h">We have some FAQ to inform you more</h2>
         </div>
-        <div class="faq-item">
-          <div class="faq-item--row flex">
-            <h5>01. SaaS versus on-premixe: How do I choose?</h5>
-            <button type="button" class="faq-expander">+</button>
-          </div>
-          <div class="question-a">
-            <p class="generic-p question-a">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Robion has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
+        <div class="faq-questions">
+          <div class="faq-row">
+            <div class="faq-item">
+              <div class="faq-item--row flex">
+                <h5>01. SaaS versus on-premixe: How do I choose?</h5>
+                <button
+                  type="button"
+                  class="faq-expander"
+                  id="switch-a"
+                  onclick="toggleFAQa()"
+                >
+                  +
+                </button>
+              </div>
+              <div class="question-a">
+                <p class="generic-p question-a" id="answer-a">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Robion has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
+                </p>
+              </div>
+            </div>
 
-        <div class="faq-item">
-          <div class="faq-item--row flex">
-            <h5>02. SaaS versus on-premixe: How do I choose?</h5>
-            <button type="button" class="faq-expander">+</button>
-          </div>
-          <div class="question-b">
-            <p class="generic-p question-b">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Robion has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
+            <div class="faq-item">
+              <div class="faq-item--row flex">
+                <h5>02. SaaS versus on-premixe: How do I choose?</h5>
+                <button
+                  type="button"
+                  class="faq-expander"
+                  id="switch-b"
+                  onclick="toggleFAQb()"
+                >
+                  +
+                </button>
+              </div>
+              <div class="question-b">
+                <p class="generic-p question-b" id="answer-b">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Robion has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
+                </p>
+              </div>
+            </div>
 
-        <div class="faq-item">
-          <div class="faq-item--row flex">
-            <h5>03. SaaS versus on-premixe: How do I choose?</h5>
-            <button type="button" class="faq-expander">+</button>
+            <div class="faq-item">
+              <div class="faq-item--row flex">
+                <h5>03. SaaS versus on-premixe: How do I choose?</h5>
+                <button
+                  type="button"
+                  class="faq-expander"
+                  id="switch-c"
+                  onclick="toggleFAQc()"
+                >
+                  +
+                </button>
+              </div>
+              <div class="question-c">
+                <p class="generic-p question-c" id="answer-c">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Robion has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-item--row flex">
+                <h5>04. SaaS versus on-premixe: How do I choose?</h5>
+                <button
+                  type="button"
+                  class="faq-expander"
+                  id="switch-d"
+                  onclick="toggleFAQd()"
+                >
+                  +
+                </button>
+              </div>
+              <div class="question-d">
+                <p class="generic-p question-d" id="answer-d">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Robion has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="question-c">
-            <p class="generic-p question-c">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Robion has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item--row flex">
-            <h5>04. SaaS versus on-premixe: How do I choose?</h5>
-            <button type="button" class="faq-expander">+</button>
-          </div>
-          <div class="question-d">
-            <p class="generic-p question-d">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Robion has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item--row flex">
-            <h5>05. SaaS versus on-premixe: How do I choose?</h5>
-            <button type="button" class="faq-expander">+</button>
-          </div>
-          <div class="question-e">
-            <p class="generic-p question-e">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Robion has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item--row flex">
-            <h5>06. SaaS versus on-premixe: How do I choose?</h5>
-            <button type="button" class="faq-expander">+</button>
-          </div>
-          <div class="question-f">
-            <p class="generic-p question-f">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Robion has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item--row flex">
-            <h5>07. SaaS versus on-premixe: How do I choose?</h5>
-            <button type="button" class="faq-expander">+</button>
-          </div>
-          <div class="question-g">
-            <p class="generic-p question-g">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Robion has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item--row flex">
-            <h5>08. SaaS versus on-premixe: How do I choose?</h5>
-            <button type="button" class="faq-expander">+</button>
-          </div>
-          <div class="question-h">
-            <p class="generic-p question-h">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Robion has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </p>
+
+          <div class="faq-row">
+            <div class="faq-item">
+              <div class="faq-item--row flex">
+                <h5>05. SaaS versus on-premixe: How do I choose?</h5>
+                <button
+                  type="button"
+                  class="faq-expander"
+                  id="switch-e"
+                  onclick="toggleFAQe()"
+                >
+                  +
+                </button>
+              </div>
+              <div class="question-e">
+                <p class="generic-p question-e" id="answer-e">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Robion has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-item--row flex">
+                <h5>06. SaaS versus on-premixe: How do I choose?</h5>
+                <button
+                  type="button"
+                  class="faq-expander"
+                  id="switch-f"
+                  onclick="toggleFAQf()"
+                >
+                  +
+                </button>
+              </div>
+              <div class="question-f">
+                <p class="generic-p question-f" id="answer-f">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Robion has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-item--row flex">
+                <h5>07. SaaS versus on-premixe: How do I choose?</h5>
+                <button
+                  type="button"
+                  class="faq-expander"
+                  id="switch-g"
+                  onclick="toggleFAQg()"
+                >
+                  +
+                </button>
+              </div>
+              <div class="question-g">
+                <p class="generic-p question-g" id="answer-g">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Robion has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-item--row flex">
+                <h5>08. SaaS versus on-premixe: How do I choose?</h5>
+                <button
+                  type="button"
+                  class="faq-expander"
+                  id="switch-h"
+                  onclick="toggleFAQh()"
+                >
+                  +
+                </button>
+              </div>
+              <div class="question-h">
+                <p class="generic-p question-h" id="answer-h">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Robion has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="part-container pricing-box">
+    <div class="part-container pricing-box" id="pricing_id">
       <div class="content pricing-content">
         <div class="flex-center">
           <div class="top-border-title">
@@ -751,7 +996,6 @@
                   Try it now
                 </button>
               </div>
-              <div></div>
             </div>
           </div>
 
@@ -843,7 +1087,6 @@
                   Try it now
                 </button>
               </div>
-              <div></div>
             </div>
           </div>
 
@@ -930,7 +1173,6 @@
                   Try it now
                 </button>
               </div>
-              <div></div>
             </div>
           </div>
         </div>
